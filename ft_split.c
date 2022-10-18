@@ -6,7 +6,7 @@
 /*   By: sdeeyien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 11:06:55 by sdeeyien          #+#    #+#             */
-/*   Updated: 2022/08/03 10:31:38 by sdeeyien         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:42:30 by sdeeyien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,8 @@ static void	ft_freemem(char **str, int i)
 static char	**do_split(char const *s, size_t count, size_t *t_pos, char **split)
 {
 	size_t			i;
-	char			*tmp_str;
 
 	i = 0;
-	tmp_str = 0;
 	while (i < count)
 	{
 		split[i] = ft_substr(s, (unsigned int) t_pos[2 * i], t_pos[2 * i + 1]);
